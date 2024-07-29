@@ -8,24 +8,24 @@ local key2app = {
     -- b = '',
     c = 'Google Chrome.app',
     d = 'DBeaver.app',
-    e = 'Finder.app',
+    e = 'Finder.app', -- explorer
     f = 'Firefox.app',
     -- g = '',
     -- h = '',
     -- i = '',
     -- j = '',
     k = 'kitty.app',
-    -- l = '',
-    m = 'Activity Monitor.app',
+    l = 'Calendar.app',
+    m = 'Activity Monitor.app', -- monitor
     -- n = '',
-    o = 'Clock.app',
-    p = 'draw.io.app',
+    o = 'Clock.app', -- oclock
+    p = 'draw.io.app', -- paint
     -- q = '',
-    r = 'Calendar.app',
+    -- r = '', -- android emulato(r)
     s = 'System Settings.app',
     t = 'Telegram.app',
     u = 'Disk Utility.app',
-    v = 'Visual Studio Code.app',
+    v = 'Visual Studio Code.app', -- vscode
     w = 'WezTerm.app',
     -- x = '',
     -- y = '',
@@ -67,9 +67,8 @@ local function focus_to_android_emulator()
   end
 end
 
-khotkey.bind({ 'alt' }, 'x', function()
+khotkey.bind({ 'alt' }, 'r', function()
     focus_to_android_emulator()
 end)
-
 
 -- Eof
